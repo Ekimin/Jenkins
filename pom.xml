@@ -10,11 +10,22 @@
 
     <repositories>
         <repository>
-            <id>test</id>
+            <id>nexus</id>
             <name>maven-thirdparty</name>
             <url>http://wentuotuo.com:8081/repository/maven-thirdparty/</url>
-
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>maven-release</name>
+            <url>http://wentuotuo.com:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>maven-snapshot</name>
+            <url>http://wentuotuo.com:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
